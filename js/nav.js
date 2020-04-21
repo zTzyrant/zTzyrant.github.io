@@ -10,10 +10,23 @@ var sticky = header.offsetTop;
 function stickNav() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
-  } else {
+    if (window.matchMedia("(max-width: 600px)").matches) {
+    document.getElementById("a_fabar").style.display = "block";}
+    
+    if (document.getElementById("myLinks").style.display === "block") {
+      document.getElementById("myLinks").style.display = "none";
+    } 
+  }else {
+    if (window.matchMedia("(mix-width: 700px)").matches) {
+    document.getElementById("label").style.display = "none";}
+    if (document.getElementById("myLinks").style.display === "none") {
+      document.getElementById("myLinks").style.display = "block";
+    }
     header.classList.remove("sticky");
+    document.getElementById("a_fabar").style.display = "none";
   }
 } 
+
 var moon = document.getElementById("moon")
 var astro = document.getElementById("astro")
 var rocket = document.getElementById("rocket")
@@ -28,4 +41,13 @@ window.onmousemove = function(e){
           moon.style.transform = "translate3d(" + x + "px" + ", " + y + "px, 0)";
           astro.style.transform = "translate3d(" + mx + "px" + ", " + my + "px, 0)";
           rocket.style.transform = "translate3d(" + rx + "px" + ", " + ry + "px, 0)";
+}
+
+function myFuncti43on() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }

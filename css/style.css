@@ -72,8 +72,7 @@ body, html {
     position: absolute;
     height: 250px;
 }
-.triton .content h2
-{
+.triton .content h2{
     position: relative;
     margin-bottom: 20px;
     color: #111;
@@ -89,18 +88,12 @@ body, html {
     margin-right: auto;
     text-align: center;
 }
-.triton .content1 {
-    position: relative;
-
-}
-.content1 {
-    padding-top: 64px !important;
-    background-color: lavender;
-    height: 60%;
-  }
 .sticky + .content {
     padding-top: 60px;
   }
+.navali .fa{
+    display: none;
+}
 .topnav {
     position: relative;
     margin-left: auto;
@@ -123,12 +116,20 @@ body, html {
     position: absolute;
     background: rgba(255,255,255, 0.05);
 }
+.topnav a.icon{display: none;}
+a.label {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0;
+    font-weight: bolder;
+}
 .content {
     padding: 16px;
 }
 .sticky {
     position: fixed;
-    background-color: black;
+    background-color: 0;
     top: 0;
     width: 100%;
 }
@@ -136,6 +137,7 @@ body, html {
     float: left;
     display: block;
     color: #f2f2f2;
+    background-color: transparent;
     transform: translate(0%, -0%);
     text-align: center;
     padding: 14px 16px;
@@ -143,9 +145,77 @@ body, html {
     font-size: 17px;
     box-shadow: 0 0px 0px rgba(126, 95, 95, 0.37);
 }
-.sticky .topnav a:active {
-    
+.sticky .topnav a:hover {
+    background-color:rgba(255, 255, 255, 255.5); 
+    border-radius: 0;
+    color: black;
 }
+#navhead .icon{display: none;}
+.sticky .topnav a:active {
+    color: black;
+}
+.sticky .topnav a.icon {display: none;}
 .navali .sticky + #services {
     padding-top: 100px;
+  }
+  @media only screen and (max-width: 600px) {
+    .triton .rocket {
+        top: 40%;
+        left: 20%;
+        position: absolute;
+        height: 100px;
+    }
+    .triton .astro {
+        top: 35%;
+        left: 70%;
+        position: absolute;
+        height: 100px;
+    }
+    .triton .moon {
+        top: 20%;
+        left: 35%;
+        position: absolute;
+        height: 150px;
+    }
+    .topnav a {padding: 5px 5px;}
+    .sticky{padding: 5px;}
+    .sticky .topnav a {
+        float: none;
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .sticky .topnav {
+        display: block;
+        color: #f2f2f2;
+        transform: translate(0%, -0%);
+        text-align: center;
+        padding: 0;
+        text-decoration: none;
+        font-size: 17px;
+        box-shadow: 0 0px 0px rgba(126, 95, 95, 0.37);
+    }
+    .sticky .topnav #myLinks {
+        display: none;
+    }
+    .topnav a {
+        color: white;
+        
+    }
+    .topnav a.icon {
+        padding: 14px 16px;
+        background: black;
+        position: absolute;
+        right: 2px;
+        top: 0;
+    }
+    .topnav a.label {
+        float: left;
+    }
+    .sticky .topnav a.icon {display: block;}
+    a.label {
+        width: 75%;
+    }
   }

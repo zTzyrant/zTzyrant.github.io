@@ -1,0 +1,56 @@
+.container-block {
+    padding-top: 64px !important;
+    height: 100%;
+    background: url(https://discordapp.com//assets/f35de8ceb4c7be0466509e067b5209a6.svg) top 100px left 0 no-repeat,url(https://discordapp.com//assets/5c8a0eea53ae23a427b61fdb1a2487b6.svg) 100% 100% no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    background-color: #18191c;
+    overflow: auto;
+    color: white;
+}
+.container-block h2{
+    margin-top: auto;
+    margin-bottom: 0;
+    text-align: center;
+}
+.flex-container {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    background-size: cover;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+} 
+.flex-container > div {
+    margin-bottom: 60px;
+    width: 353.333px;
+    height: 213px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.4px;
+
+}
+.flex-container img {
+    float: left;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+}
+.flex-container h3 {
+    line-height: unset;
+
+}
+.flex-container button {
+    float: left;
+}
+.flex-container p {
+    float: inline-end;
+}
+.flex-container p.whatis {
+    float: left;
+    color: #c7ccd1;
+    margin: 10px;
+}
