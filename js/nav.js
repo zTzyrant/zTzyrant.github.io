@@ -1,27 +1,23 @@
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {stickNav()};
-
-// Get the header
+window.onscroll = function() {stickNav()} ;
 var header = document.getElementById("NavHead");
-// Get the offset position of the navbar
 var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+var targetOffset = $("#about").offset().top;
 function stickNav() {
+
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
     if (window.matchMedia("(max-width: 600px)").matches) {
     document.getElementById("a_fabar").style.display = "block";}
-    
     if (document.getElementById("myLinks").style.display === "block") {
       document.getElementById("myLinks").style.display = "none";
     } 
-  }else {
+} else {
     if (window.matchMedia("(mix-width: 700px)").matches) {
     document.getElementById("label").style.display = "none";}
     if (document.getElementById("myLinks").style.display === "none") {
       document.getElementById("myLinks").style.display = "block";
     }
+   
     header.classList.remove("sticky");
     document.getElementById("a_fabar").style.display = "none";
   }
@@ -36,8 +32,8 @@ window.onmousemove = function(e){
           y = - e.clientY/30,
           mx = - e.clientX/50,
           my = - e.clientY/50,
-          rx = - e.clientX/10,
-          ry = - e.clientY/10;
+          rx = - e.clientX/20,
+          ry = - e.clientY/20;
           moon.style.transform = "translate3d(" + x + "px" + ", " + y + "px, 0)";
           astro.style.transform = "translate3d(" + mx + "px" + ", " + my + "px, 0)";
           rocket.style.transform = "translate3d(" + rx + "px" + ", " + ry + "px, 0)";
@@ -51,3 +47,17 @@ function myFuncti43on() {
     x.style.display = "block";
   }
 }
+
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
