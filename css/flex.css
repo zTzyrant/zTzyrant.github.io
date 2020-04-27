@@ -46,6 +46,7 @@
 .flex-container p {
     float: inline-end;
     font-size: 14px;
+    color: #c7ccd1;
 }
 .flex-container p.whatis {
     float: left;
@@ -78,23 +79,43 @@
     margin-right: auto;
     width: 80%;
     height: 40%;
+    background-image: url("../image/bl.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #f8f9fd;
     box-shadow: 10px 10px #888888;
     color: black;
     padding: 10px 10px;
     z-index: 0;
 }
+.triden .prlxx h2 {
+    font-size: 1.5em;
+    color: #111;
+    background: #fff;
+    font-weight: 300;
+    padding: 5px 20px;
+    display: inline-block;
+    text-align: center;
+}
 .triden .prlxx .set {
     padding: 10px 10px;
 }
-.triden img {
+.triden .auth {
     float: left;
     width: 259px; 
     height: 259px; 
     border-radius: 50%;
 }
-.triden p {
+.triden p.ddd3d {
     position: relative;
+    color: #111;
+    background: #fff;
+    font-weight: 300;
+    padding: 5px 20px;
+    text-align: center;
+    z-index: -1;
 }
 .flip-card {
     background-color: transparent;
@@ -137,9 +158,99 @@
     transform: rotateY(180deg);
     border-radius: 50%;
  }
+ .triden .prlxx .socialNetworkNavBar{
+     position: relative;
+ }
+ .socialNetworkNavBar {
+	text-align: center;
+	display: block;
+}
+.socialNetworkNavBar .socialNetworkNav {
+    display: inline-block;
+	margin-right: 23px;
+}
+.socialNetworkNavBar .socialNetworkNav img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.zeus {
+    padding-top: 50px !important;
+    height: 100%;
+    background: -webkit-linear-gradient(0deg, #f8f9fd 50%, #18191c 50%);
+    background: -o-linear-gradient(0deg, #f8f9fd 50%, #18191c 50%);
+    background: -moz-linear-gradient(0deg, #f8f9fd 50%, #18191c 50%);
+    background: linear-gradient(0deg, #f8f9fd 50%, #18191c 50%);
+}
+.zeus h2 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 300;
+    padding: 5px 20px;
+    text-align: center;
+}
+.zeus img {
+    width: 100%;
+    max-height: 500px;
+    border: 4px solid #18191c;
+}
+.lat000 {
+    padding-top: 50px !important;
+    height: 100%;
+    background-color: #f8f9fd;
+    color: #18191c;
+}
+.lat000 h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 5px 20px;
+    text-align: center;
+}
+.lat000 iframe {
+    width: 80%;
+    height: 500px; 
+    border: 0;
+}
+.lat000 p {
+    font-style: italic;
+}
+.lat000 .cntr {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.dayamon {
+    height: 100%;
+    padding-top: 50px !important;
+    background-color: #18191c;
+    color: white;
+}
+.dayamon h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 5px 20px;
+    text-align: center;
+}
+.dayamon .floati {
+    width: 50%;
+    height: 80%;
+    background-color: whitesmoke;
+}
+footer {
+    bottom: 0;
+    background-color: #18191c;
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+    padding: 5px 20px;
+    text-align: center;
+}
 
 @media only screen and (min-width : 285px) and (max-width : 480px) {
     .triden .prlxx {top: 0; height: auto;}
+    .zeus h2 {margin-top: 250px;}
+    .zeus img {margin-top: 100px;}
     .flip-card {
         background-color: transparent;
         width: 259px;

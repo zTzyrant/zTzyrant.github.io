@@ -6,7 +6,7 @@
     <title>zTyrant Corp.</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/flex.css">
-    <link rel="stylesheet" href="css/btn.scss">
+    <link rel="stylesheet" href="css/imagegallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/jquery-3.5.0.js"></script>
 </head>
@@ -115,12 +115,12 @@
     </div>
     <div id="about" class="triden">
         <h1>Who I am ?</h1>
-        <div class="prlxx">
+        <div id="prsx" class="prlxx">
             <div class="set">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="image/author.png" >
+                        <img class="auth" src="image/social/author.png" alt="Author">
                     </div>
                     <div class="flip-card-back" style="text-align: center;">
                         <i><h4>Muhammad Zein Akbar</h4> 
@@ -129,20 +129,74 @@
                 </div>
             </div>
         </div>
-           <h2>I am a Muhammad Zein Akbar</h2> <p>
+           <h2>I am a Muhammad Zein Akbar</h2> <p class="ddd3d">
             This website was created to promote my website design talents. 
             You can provide input through the comments column on the main page. 
-            I also have a blogger account and a YouTube account. Which contains content about the website, hacking, penetration test and also playing games. Don't forget to add my social media contacts to contact me if there is a project.</p> 
-            <section class="swsease">
-                <button class="draw">Draw</button>
-              </section>
-              
+            I also have a blogger account and a YouTube account. 
+            Which contains content about the website, hacking, penetration test and also playing games. 
+            Don't forget to add my social media contacts to contact me if there is a project.</p> 
+            <div class="socialNetworkNavBar">
+                <div class="socialNetworkNav"> 
+                    <a href="http://line.me/ti/p/~zeingrove" target="_blank"><img src="image/social/line.png" alt="Line"></a>
+                </div>
+                <div class="socialNetworkNav"> 
+                    <a href="https://ztzyrantcyberart.blogspot.com" target="_blank"><img src="image/social/blogger.png" alt="Blogger"></a>
+                </div>
+                <div class="socialNetworkNav"> 
+                    <a href="https://www.youtube.com/zTzyrant" target="_blank"><img src="image/social/yt.png" alt="YouTube"></a>
+                </div>
+                <div class="socialNetworkNav"> 
+                    <a href="https://www.instagram.com/me.zein_/" target="_blank"><img src="image/social/instagram.png"></a>
+                </div>   
+            </div>      
         </div>
     </div>
 
-    <div id="contact" class="triton">
+    <div id="gallery" class="zeus">
+        <h2>Latest Project</h2>
+            <div class="sldnct">
+                <div class="ther fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="image/gallery/animate background.png" alt="animate">
+                    <div class="text">Animate Background With Js</div>
+                </div>
+                <div class="ther fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="image/gallery/bootstrap.png" alt="bs4">
+                    <div class="text">BS4 Project</div>
+                </div>
+                <div class="ther fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="image/gallery/Rails.png" alt="rails">
+                    <div class="text">Rails Project</div>
+                </div>
+                <div class="ther fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="image/gallery/curd.png" alt="curd">
+                    <div class="text">CURD Project</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        <div class="ktaro">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
     </div>
-    
+    <div id="location" class="lat000">
+        <h2>Want to Meet Up?</h2>
+        <div class="cntr">
+            <iframe src="https://bit.ly/udnorzein" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <p>Jl. Raya Kedampang No.99, Kerobokan Kelod, Kec. Kuta Utara, Kabupaten Badung, Bali 80361</p>
+        </div>
+    </div>
+    <div id="contact" class="dayamon">
+        <h2>CONTACT US</h2>
+
+    </div>
+    <footer>Copyright 2020 © zTzyrant Cyber Art. All rights reserved.</footer>
     <script src="js/nav.js"></script>
     
 </body>
