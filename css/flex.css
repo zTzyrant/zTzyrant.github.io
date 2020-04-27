@@ -1,7 +1,7 @@
 .container-block {
     padding-top: 64px !important;
     height: 100%;
-    background: url(../image/flexi/left.png) top 100px left 0 no-repeat,url(../image/flexi/right.png) 100% 100% no-repeat;
+    background: url(../image/flexi/left-min.png) top 100px left 0 no-repeat,url(../image/flexi/right-min.png) 100% 100% no-repeat;
     background-color: rgba(0, 0, 0, 0);
     background-color: #18191c;
     overflow: auto;
@@ -44,7 +44,7 @@
     line-height: unset;
 }
 .flex-container p {
-    float: inline-end;
+    float: right;
     font-size: 14px;
     color: #c7ccd1;
 }
@@ -79,7 +79,7 @@
     margin-right: auto;
     width: 80%;
     height: 40%;
-    background-image: url("../image/bl.jpg");
+    background-image: url("../image/bl-min.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -206,7 +206,7 @@
     padding: 5px 20px;
     text-align: center;
 }
-.lat000 iframe {
+.lat000 img {
     width: 80%;
     height: 500px; 
     border: 0;
