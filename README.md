@@ -1,1 +1,2 @@
-"# zTzyrant.github.io" 
+# zTzyrant Corporation Project
+Author ztzyrant@gmail.com
