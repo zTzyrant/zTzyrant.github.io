@@ -92,3 +92,83 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+
+document.querySelector('#fomsta').addEventListener('submit', function(e) {
+  var form = this;
+  
+  e.preventDefault();
+  
+  swal({
+      title: "Are You Sure You Want to Checkout?",
+      text: "You Can Still Change Data !!!",
+      icon: "warning",
+      buttons: [
+        'No, cancel it!',
+        'Yes, I am sure!'
+      ],
+      dangerMode: true,
+    }).then(function(isConfirm) {
+      if (isConfirm) {
+        swal({
+          title: 'Success!',
+          text: 'Your Order Will Be Immediately Processed!',
+          icon: 'success'
+        }).then(function() {
+          form.submit();
+        });
+      } else {
+        swal("Cancelled", ":)", "error");
+      }
+    });
+});
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+function show() {
+document.getElementById('id01').style.display = 'block';
+}
+function  juef() {
+document.getElementById('id01').style.display='none'
+}
+var opt1 = 'Website Design';
+var opt2 = 'Website Application';
+var opt3 = 'Website Analysis';
+var opt4 = 'Django';
+var opt5 = 'Ruby on Rails';
+var opt6 = 'Laravel';
+var opt7 = 'Website Security';
+var opt8 = 'Website Pentest';
+var opt9 = 'Python';
+var val = 'Select Service';
+$('#btn1').on('click', function() {
+  $('#service').val(opt1);
+});
+$('#btn2').on('click', function() {
+  $('#service').val(opt2);
+});
+$('#btn3').on('click', function() {
+  $('#service').val(opt3);
+});
+$('#btn4').on('click', function() {
+  $('#service').val(opt4);
+});
+$('#btn5').on('click', function() {
+  $('#service').val(opt5);
+});
+$('#btn6').on('click', function() {
+  $('#service').val(opt6);
+});
+$('#btn7').on('click', function() {
+  $('#service').val(opt7);
+});
+$('#btn8').on('click', function() {
+  $('#service').val(opt8);
+});
+$('#btn9').on('click', function() {
+  $('#service').val(opt9);
+});
